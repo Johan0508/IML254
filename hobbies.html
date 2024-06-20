@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+ 
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('image/beach2.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: rgba(182, 148, 124, 0.8);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        header h1 {
+            font-family: 'Times New Roman';
+            margin: 0;
+            font-size: 2.5em;
+            color: #6F4E37;
+        }
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 1em;
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 1em;
+            transition: color 0.3s;
+            color: #6F4E37;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(182, 148, 124, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li ul li {
+            width: 100%;
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 1em;
+            color: #6F4E37;
+        }
+        
+        .content-section {
+            padding: 3em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            flex: 1; 
+        }
+        .intro-text {
+            max-width: 40%;
+            text-align: center;
+            color: #6F4E37;
+        }
+        .intro-text h2 {
+            font-family: 'Times New Roman';
+            font-size: 2.5em;
+        }
+        .intro-text p {
+            font-size: 1.5em;
+            text-align: justify;
+            color: #FEFAF6;
+        }
+        .polaroid-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        div.polaroid {
+            width: 35%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .polaroid img, .polaroid video {
+            width: 100%;
+            border-radius: 30px;
+        }
+        div.container {
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+       
+        footer {
+            background-color: rgba(182, 148, 124, 0.8);
+            color: white;
+            text-align: right;
+            padding: 10px;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JOHAN ISKANDAR WEBSITE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about me.html">ABOUT ME</a>
+                    <ul>
+                        <li><a href="education.html">EDUCATION</a></li>
+                        <li><a href="hobbies.html">HOBBIES</a></li>
+                        <li><a href="family.html">FAMILY</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="favourite.html">FAVOURITE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="education" class="content-section">
+        <div class="intro-text">
+            <h2>My Hobbies</h2>
+        </div>
+        <div class="polaroid-container">
+            <div class="polaroid">
+                <img src="image/badminton.jpeg" alt="Badminton" style="width:90%">
+                <div class="container">
+                    <p>I only have one hobby that I really enjoy: playing badminton. I never get bored of it and I'm serious when I say that my hobby is only badminton.</p>
+                </div>
+            </div>
+            <div class="polaroid">
+                <video controls>
+                    <source src="video/rally.mp4" type="video/mp4">
+                </video>
+                <div class="container">
+                    <p>This video shows some of my badminton rallies with my friends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 JOHAN ISKANDAR. All rights reserved.</p>
+    </footer>
+</body>
+</html>

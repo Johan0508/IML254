@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('image/beach2.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: rgba(182, 148, 124, 0.8);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        header h1 {
+            font-family: 'Times New Roman';
+            margin: 0;
+            font-size: 2.5em;
+            color: #6F4E37;
+        }
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 1em;
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 1em;
+            transition: color 0.3s;
+            color: #6F4E37;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(182, 148, 124, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li ul li {
+            width: 100%;
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 1em;
+            color: #6F4E37;
+        }
+      
+        .content-section {
+            padding: 3em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+        }
+        .intro-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 3em; 
+        }
+        .intro-container img {
+            max-width: 350px;
+            border-radius: 30px;
+            margin-right: 2em;
+        }
+        .intro-text {
+            max-width: 40%;
+            text-align: left;
+            color: #6F4E37;
+        }
+        .intro-text h2 {
+            font-family: 'Times New Roman';
+            font-size: 2.5em;
+        }
+        .intro-text p {
+            font-size: 1.5em;
+            text-align: justify;
+            color: #FEFAF6;
+        }
+	div.polaroid {
+	   width: 40%;
+  	   background-color: white;
+  	   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	   margin-bottom: 25px;
+	   border-radius: 30px;
+     	 }
+
+	div.container {
+ 	    text-align: center;
+ 	    padding: 10px 20px;
+	    border-radius: 30px;
+	 }
+
+        footer {
+            background-color: rgba(182, 148, 124, 0.8);
+            color: white;
+            text-align: right;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JOHAN ISKANDAR WEBSITE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about me.html">ABOUT ME</a>
+                    <ul>
+                        <li><a href="education.html">EDUCATION</a></li>
+                        <li><a href="hobbies.html">HOBBIES</a></li>
+                        <li><a href="family.html">FAMILY</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="favourite.html">FAVOURITE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="education" class="content-section">
+        <div class="intro-container">
+            <img src="image/kelas.jpeg" alt="Education Image">
+            <div class="intro-text">
+                <h2>My Education</h2>
+                <p>I pursued my studies in Informatic Library at Universiti Teknologi Mara Kedah, Merbok. During my time there, I developed a strong foundation in programming, web development, and Library. In this years of study I pickup a good discipline and improve myself to be a better person  </p>
+            </div>
+        </div>
+	<div class="polaroid">
+  <img src="image/lasalle.jpeg" alt="5 Terre" style="width:100%">
+  <div class="container">
+  <p>My high school was SMK Lasalle PJ, I move to this school when i was 15 years old, when my father passed away when I was 15 I decided to move and live with my mother</p>
+  </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 JOHAN ISKANDAR. All rights reserved.</p>
+    </footer>
+</body>
+</html>

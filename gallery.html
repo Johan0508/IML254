@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('image/beach2.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: rgba(182, 148, 124, 0.8);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        header h1 {
+            font-family: 'Times New Roman';
+            margin: 0;
+            font-size: 2.5em;
+            color: #6F4E37;
+        }
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 1em;
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 1em;
+            transition: color 0.3s;
+            color: #6F4E37;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(182, 148, 124, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li ul li {
+            width: 100%;
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 1em;
+            color: #6F4E37;
+        }
+        
+        .content-section {
+            padding: 3em;
+            text-align: center;
+	     font-family: 'Times New Roman';
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+    
+        footer {
+            background-color: rgba(182, 148, 124, 0.8);
+            color: white;
+            text-align: right;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JOHAN ISKANDAR WEBSITE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about me.html">ABOUT ME</a>
+                    <ul>
+                        <li><a href="education.html">EDUCATION</a></li>
+                        <li><a href="hobbies.html">HOBBIES</a></li>
+                        <li><a href="family.html">FAMILY</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="favourite.html">FAVOURITE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hobbies" class="content-section">
+        <h2>MY HOBBIES</h2>
+        <div class="gallery">
+            <img src="image/karisma.jpeg" alt="Hobby 1">
+            <img src="image/training.jpeg" alt="Hobby 2">
+            <img src="image/karisma2.jpeg" alt="Hobby 3">
+        </div>
+    </section>
+    <section id="gallery" class="content-section">
+        <h2>GALLERY</h2>
+        <div class="gallery">
+            <img src="image/sunset1.jpeg" alt="Gallery Image 1">
+            <img src="image/sunset2.jpeg" alt="Gallery Image 2">
+            <img src="image/sunset3.jpeg" alt="Gallery Image 3">
+        </div>
+    </section>
+    <section id="gallery" class="content-section">
+        <h2>PICTURE OF ME</h2>
+        <div class="gallery">
+            <img src="image/muzium.jpeg" alt=" Picture of me1">
+            <img src="image/tamarind.jpeg" alt=" Picture of me 2">
+            <img src="image/bundle.jpeg" alt=" Picture of me 3">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 JOHAN ISKANDAR. All rights reserved.</p>
+    </footer>
+</body>
+</html>
